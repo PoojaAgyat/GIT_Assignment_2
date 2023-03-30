@@ -6,7 +6,7 @@ dotenv.config();
 const express = require("express");
 const cors = require("cors");
 
-const db = require("./connections/db");
+const db = require("./connection/db");
 const userRouter = require("./routes/user");
 const postRouter = require("./routes/post");
 
@@ -16,7 +16,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 // connect to Database
-connectDB();
+db();
 
 // middlewares 
 app.use(cors());
