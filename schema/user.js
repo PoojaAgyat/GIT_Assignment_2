@@ -9,7 +9,7 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    pasward: {
+    password: {
         type: String,
         required: true,
     },
